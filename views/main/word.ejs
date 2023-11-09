@@ -23,19 +23,22 @@
 				<p id="result" style="white-space: pre-line">
 						   
 				</p>
+				<h2 align="center" id="key"></h2>
 				<script>
 					function checkAnswer() {
 						var answer = document.getElementById("answer").value;
-						var hint = '<%= day.hint %>'
-						var correct = '<%= day.answer %>'
-						var desc = '<%= day.answer_desc %>'
-						var url = '<%= day.reward_url %>'
-						var element = document.getElementById("result")
+						var hint = '<%= day.hint %>';
+						var correct = '<%= day.answer %>';
+						var desc = '<%= day.answer_desc %>';
+						var reward = '<%= day.key %>';
+						var element = document.getElementById("result");
+						var key = document.getElementById("key");
 						if (answer.localeCompare(correct) == 0) {
-							element.innerHTML = "Korrekt - Gut gemacht!\n " + desc
-							fetch(url + "/" + '<%= day.day %>');
+							element.innerHTML = "Korrekt - Gut gemacht!\n " + desc ;
+							key.innerHTML = "Dein heutiger Freischaltcode lautet: " + reward;
+							//fetch(url + "/" + '<%= day.day %>');
 						} else {
-							element.innerHTML = "Leider Falsch, vielleicht klapt es mit einem Hinweis?\n " + hint
+							element.innerHTML = "Leider Falsch, vielleicht klapt es mit einem Hinweis?\n " + hint;
 						}
 					}
 					function showHint() {
