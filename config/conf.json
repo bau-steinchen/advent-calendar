@@ -10,7 +10,7 @@
             "hint": "Die Lösung steht in der Frage.",
             "answer": 1,
             "answerDesc": "1 weil oben steht 1 = 5",
-            "key":"0072"
+            "key":"6827"
         },
         {
             "day": 2, 
@@ -20,7 +20,7 @@
             "hint": "Wieviele Socken hat ein Paar?",
             "answer": 2,
             "answerDesc": "Es sind nur 2 weil nicht gesagt wurde das sie die selbe Farbe haben müssen.",
-            "key":"0072"
+            "key":"2524"
         },
         {
             "day": 3, 
@@ -30,7 +30,7 @@
             "hint": "Denk an die Monate.",
             "answer": 30,
             "answerDesc": "Die Zahlen sind die Tage der Monate beginnend mit Jannuar",
-            "key":"0072"
+            "key":"1289"
         },
         {
             "day": 4, 
@@ -40,7 +40,7 @@
             "hint": "Gibt ein Lied über Ihn.",
             "answer": "Rudolph",
             "answerDesc": "Rudolph the red nose reindeer....tralala",
-            "key":"0072"
+            "key":"7841"
         },
         {
             "day": 5, 
@@ -54,27 +54,31 @@
                 {"option":"Die Schokoladenindustrie im 20. Jahrhundert.", "solution":false}
             ],
             "answerDesc": "Das erste gedruckte Exemplar verdankt seine Existenz den Kindheitserlebnissen des schwäbischen Pfarrersohnes aus Maulbronn. Seine Mutter zeichnete 24 Kästchen auf einen Karton",
-            "key":"0072"
+            "key":"3151"
         },
         {
             "day": 6, 
-            "type": "", 
+            "type": "word", 
             "title": "6",
-            "question": "",
-            "hint": "",
-            "answer": "",
-            "answerDesc": "",
-            "key":"0072"
+            "question": "Das Anspannen des Ochsen vor den Karren nennt man  ...?",
+            "hint": "Es ist auch ein männlicher vornamen mit J.",
+            "answer": "Jochen",
+            "answerDesc": "Der Ausdruck kommt aus der Landwirtschaft wo die Bügel am Wagen Joch genannt werden. An diesem werden die Ochsen festgeschnallt -> Jochen",
+            "key":"7399"
         },
         {
             "day": 7, 
-            "type": "", 
+            "type": "multi", 
             "title": "7",
-            "question": "",
-            "hint": "",
-            "answer": "",
-            "answerDesc": "",
-            "key":"0072"
+            "question": "Der Großvater des kleinen Lord im TV-Klassiker ist?",
+            "hint": "Belvoir Castle ist der Drehort für diesen Film",
+            "answer": [
+                {"option":"Earl of Essex", "solution":false}, 
+                {"option":"Earl of Grantham", "solution":false}, 
+                {"option":"Earl of Dorincort", "solution":true}
+            ],
+            "answerDesc": "Earl of Essex war ein englischer Politiker und Feldherr.\nEarl of Grantham in ein erblicher Tiel aus dem Gebiet Lincolnshire(England)",
+            "key":"3328"
         },
         {
             "day": 8, 
@@ -84,7 +88,115 @@
             "hint": "Matti hat keine weiteren Geschwister.",
             "answer": "Matti",
             "answerDesc": "Er schaut sich ein Foto von sich selbst an.",
-            "key":"0072"
+            "key":"8415"
+        },
+        {
+            "day": 9, 
+            "type": "multi", 
+            "title": "9",
+            "question": "Wer verstarb 1997 kurz nach Prinzessin Diana",
+            "hint": "Die Person hat immer versucht sich um alle zu kümmern und speziell um Obdachlose",
+            "answer": [
+                {"option":"Mutter Theresa", "solution":true}, 
+                {"option":"Freddy Mercury", "solution":false}, 
+                {"option":"Harald Juhnke", "solution":false}
+            ],
+            "answerDesc": "Diana verstarb am 31.08.1997. Mutter Theresa am 05.09.1997\n Freddy Mercury 24.11.1991, Harald Juhnke 01.04.2005",
+            "key":"3913"
+        },
+        {
+            "day": 10, 
+            "type": "multi", 
+            "title": "10",
+            "question": "Welche Farbe hatte der Mantel des Weihnachtsmannes, bevor ihn Coca Cola rot einkleidete?",
+            "hint": "Es ist keine Farbe die einen offizielen Stellenwert assoziiert",
+            "answer": [
+                {"option":"Blau", "solution":true}, 
+                {"option":"Gold", "solution":false}, 
+                {"option":"Weiß", "solution":false}
+            ],
+            "answerDesc": "1904 wurde in einer abgebrannten Spielzeugfabrik ein Weihnachtsmann in einem blauen Mantel gefunden. Vermutlich daher, da lediglich die Farben Braun, Schmutziggelb, Grünlichblau und eben Blau zur Auswahl an Salzlasuren standen.",
+            "key":"5584"
+        },
+        {
+            "day": 11, 
+            "type": "word", 
+            "title": "11",
+            "question": "Theas Mutter hat 4 Töchter. Die drei heißen Dana, Dena und Dina. Wie heißt das vierte Mädchen?",
+            "hint": "Lösung steht im ersten Satz.",
+            "answer": "Thea",
+            "answerDesc": "Theas Mutter... Sie ist das vierte Mädchen.",
+            "key":"3741"
+        },
+        {
+            "day": 12, 
+            "type": "word", 
+            "title": "12",
+            "question": "Womit umrundete Bertrand Piccard, der Sohn des Tiefseetauchers Jacques Piccard, 1999 den Globus?",
+            "hint": "Es war ein großer...",
+            "answer": "Ballon",
+            "answerDesc": "Bertrand Piccard ist ein Schweizer Psychiater und Abenteurer. Er umkreiste 1999 im dritten Versuch als erster Mensch die Erde nonstop in einem Ballon.",
+            "key":"4935"
+        },
+        {
+            "day": 13, 
+            "type": "multi", 
+            "title": "13",
+            "question": "Woher stammt die Nordmanntanne eigentlich?",
+            "hint": "Die Luft ist dort in weiten Teilen sehr dünn",
+            "answer": [
+                {"option":"Kaukasus", "solution":true}, 
+                {"option":"Indien", "solution":false}, 
+                {"option":"Grönland", "solution":false},
+                {"option":"Griechenland", "solution":false}
+            ],
+            "answerDesc": "Die Nordmanntanne, lat. abies nordmanniana, stammt ursprünglich aus dem westlichen Kaukasus und wurde nach dem finnischen Biologen Alexander von Nordmann benannt, der diese Tanne im 19. Jh. entdeckte.",
+            "key":"7762"
+        },
+        {
+            "day": 14, 
+            "type": "multi", 
+            "title": "14",
+            "question": "Wieviele Nadeln hat ein durchschnittlicher (1,7m großer) Weihnachtsbaum?",
+            "hint": "Ein Ast kommt im durschnitt auf 11.000 Nadeln",
+            "answer": [
+                {"option":"245.000", "solution":false}, 
+                {"option":"69.000", "solution":false}, 
+                {"option":"180.000", "solution":true},
+                {"option":"110.000", "solution":false}
+            ],
+            "answerDesc": "In der Regel ist der deutsche Weihnachtsbaum zwischen 1,60 m und 1,75 m groß, und ein Nadelbaum dieser Größe hat rund 180.000 Nadeln.",
+            "key":"3551"
+        },
+        {
+            "day": 15, 
+            "type": "number", 
+            "title": "15",
+            "question": "Jedes Kind in der Familie hat mindestens 3 Brüder und 3 Schwestern. Wieviele Kinder hat diese Familie mindestens?",
+            "hint": "Es sind genauso viele Jungs wie Mädchen",
+            "answer": 8,
+            "answerDesc": "Es sind 4 Jungs und 4 Mädchen. Dadurch hat jeder 3 vom selben Geschlecht und 4 vom anderen.",
+            "key":"7433"
+        },
+        {
+            "day": 16, 
+            "type": "number", 
+            "title": "16",
+            "question": "",
+            "hint": "",
+            "answer": 8,
+            "answerDesc": "",
+            "key":"3991"
+        },
+        {
+            "day": 17, 
+            "type": "word", 
+            "title": "17",
+            "question": "Für was werden die Zahlen 80 und 20 als gesund angesehen.",
+            "hint": "Wir haben es alle. Schlimm wird es nur wenn die Zahlen sinken oder steigen.",
+            "answer": "Blutdruck",
+            "answerDesc": "Der Blutdruck hat bei gesunden Werten ein Verhältnis von 120 zu 80.",
+            "key":"5571"
         }
     ]
      
