@@ -6,3 +6,32 @@
     transform: translate(-50%, -50%);
     padding: 10px;
   }
+.div-center {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+.btn-center {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+li {
+  margin: 5px
+}
+/*.list-center {
+    margin: 0;
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  } */

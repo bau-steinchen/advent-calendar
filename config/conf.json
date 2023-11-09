@@ -44,12 +44,16 @@
         },
         {
             "day": 5, 
-            "type": "", 
+            "type": "multi", 
             "title": "5",
-            "question": "",
-            "hint": "",
-            "answer": "",
-            "answerDesc": "",
+            "question": "Wer hat den ersten gedruckten Adventskalender erfunden?",
+            "hint": "Er ist nicht so alt wie man glauben mag.",
+            "answer": [
+                {"option":"Die Römer etwa 400 n. Chr.", "solution":false}, 
+                {"option":"Ein schwäbischer Pfarrersohn im 19. Jahrhundert.", "solution":true}, 
+                {"option":"Die Schokoladenindustrie im 20. Jahrhundert.", "solution":false}
+            ],
+            "answerDesc": "Das erste gedruckte Exemplar verdankt seine Existenz den Kindheitserlebnissen des schwäbischen Pfarrersohnes aus Maulbronn. Seine Mutter zeichnete 24 Kästchen auf einen Karton",
             "key":"0072"
         },
         {

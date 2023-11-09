@@ -11,37 +11,48 @@
 				<p align="center" style="white-space: pre-line">
 					<%= day.question %>	
 				</p>
-				<div style="margin:10px">
-					<input type="text" id="answer" size="20" />
+				<div class="div-center" style="margin:10px">
+					<!-- <input type="text" id="answer" size="20" />
 					<button id="submit" onclick="checkAnswer()" type="button">OK</button>
-					<button id="hint" onclick="showHint()" type="button">Hint</button>
-					
-					
+					<button id="hint" onclick="showHint()" type="button">Hint</button> -->
+					<ul>
+						<% day.answer.forEach(answer => { %>
+								<li class="list-center">
+									<button id="submit" onclick="checkAnswer('<%= answer.solution %>')" type="button"><%= answer.option %></button>
+								</li>
+						<% }) %>
+					</ul>
 					
 				</div>
-				<p align="center"><a href="/" type="button">Home</a></p>
+				<p style="margin-top: 10px" align="center"><a href="/" type="button">Home</a></p>
 				<p id="result" style="white-space: pre-line">
 						   
 				</p>
+				<h2 align="center" id="key"></h2>
 				<script>
-					function checkAnswer() {
-						var answer = document.getElementById("answer").value;
-						var hint = '<%= day.hint %>'
-						var correct = '<%= day.answer %>'
-						var desc = '<%= day.answer_desc %>'
-						var url = '<%= day.reward_url %>'
-						var element = document.getElementById("result")
-						if (answer.localeCompare(correct) == 0) {
-							element.innerHTML = "Korrekt - Gut gemacht!\n " + desc
-							fetch(url + "/" + '<%= day.day %>');
+					function checkAnswer(solution) {
+						console.log(solution);
+						var hint = '<%= day.hint %>';
+						var desc = '<%= day.answer_desc %>';
+						var reward = '<%= day.key %>';
+						var element = document.getElementById("result");
+						var key = document.getElementById("key");
+						if (solution.localeCompare("true") == 0) {
+							element.innerHTML = "Korrekt - Gut gemacht!\n " + desc ;
+							key.innerHTML = "Dein heutiger Freischaltcode lautet: " + reward;
+							//fetch(url + "/" + '<%= day.day %>');
 						} else {
-							element.innerHTML = "Leider Falsch, vielleicht klapt es mit einem Hinweis?\n " + hint
+							element.innerHTML = "Leider Falsch, vielleicht klapt es mit einem Hinweis?\n " + hint;
+							key.innerHTML = " "
 						}
 					}
 					function showHint() {
-						var day = '<%= day.hint %>'
-						var element = document.getElementById("result")
-						element.innerHTML = day
+						var day = '<%= day.hint %>';
+						var element = document.getElementById("result");
+						element.innerHTML = day;
+						
+						var key = document.getElementById("key");
+						key.innerHTML = " "
 					}
 				</script>
 					
