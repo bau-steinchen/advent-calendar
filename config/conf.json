@@ -1,0 +1,87 @@
+{
+    "name": "christmas-calendar",
+    "typedef": ["number", "word", "multi"],
+    "calendar": [
+        {
+            "day": 1, 
+            "type": "number", 
+            "title": "1",
+            "question": "Wenn es ist: \n1 = 5 \n2 = 10 \n3 = 15 \n4 = 20 \n dann 5 = ?",
+            "hint": "Die Lösung steht in der Frage.",
+            "answer": 1,
+            "answerDesc": "1 weil oben steht 1 = 5",
+            "key":"0072"
+        },
+        {
+            "day": 2, 
+            "type": "number", 
+            "title": "2",
+            "question": "In einem Sack befinden sich 10 weiße und 10 schwarze Socken.\nWie viele Socken musst du mindestens herausnehmen, um ein Paar zu bekommen?",
+            "hint": "Wieviele Socken hat ein Paar?",
+            "answer": 2,
+            "answerDesc": "Es sind nur 2 weil nicht gesagt wurde das sie die selbe Farbe haben müssen.",
+            "key":"0072"
+        },
+        {
+            "day": 3, 
+            "type": "number", 
+            "title": "3",
+            "question": "Welche Zahl kommt als nächstes?\n31, 28, 31, 30, 31, ?",
+            "hint": "Denk an die Monate.",
+            "answer": 30,
+            "answerDesc": "Die Zahlen sind die Tage der Monate beginnend mit Jannuar",
+            "key":"0072"
+        },
+        {
+            "day": 4, 
+            "type": "word", 
+            "title": "4",
+            "question": "Wie heisst das Rentier mit der roten Nase?",
+            "hint": "Gibt ein Lied über Ihn.",
+            "answer": "Rudolph",
+            "answerDesc": "Rudolph the red nose reindeer....tralala",
+            "key":"0072"
+        },
+        {
+            "day": 5, 
+            "type": "", 
+            "title": "5",
+            "question": "",
+            "hint": "",
+            "answer": "",
+            "answerDesc": "",
+            "key":"0072"
+        },
+        {
+            "day": 6, 
+            "type": "", 
+            "title": "6",
+            "question": "",
+            "hint": "",
+            "answer": "",
+            "answerDesc": "",
+            "key":"0072"
+        },
+        {
+            "day": 7, 
+            "type": "", 
+            "title": "7",
+            "question": "",
+            "hint": "",
+            "answer": "",
+            "answerDesc": "",
+            "key":"0072"
+        },
+        {
+            "day": 8, 
+            "type": "word", 
+            "title": "8",
+            "question": "Matti schaut ein Bild an und sagt: \"Er ist der Sohn meines Vaters, aber er ist nicht mein Bruder.\n Wer ist auf dem Foto?",
+            "hint": "Matti hat keine weiteren Geschwister.",
+            "answer": "Matti",
+            "answerDesc": "Er schaut sich ein Foto von sich selbst an.",
+            "key":"0072"
+        }
+    ]
+     
+}
