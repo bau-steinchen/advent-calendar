@@ -182,10 +182,10 @@
             "day": 16, 
             "type": "number", 
             "title": "16",
-            "question": "",
-            "hint": "",
-            "answer": 8,
-            "answerDesc": "",
+            "question": "Ein Rentier muss eine Strecke von 500km mit einer blechdose am bein zurücklegen. Bei jedem Schritt knallt die Büchse einmal auf den Boden. Beim Hören des Geräusches verdoppelt das Wesen jeweils sein Tempo. 1Schritt = 1m und es startet bei 1m/s. Wie schnell ist das Rentier bei 500km?",
+            "hint": "Schallgeschwindigkeit 343,2 m/s. nach 1m=2m/s, nach 2m=4m/s, nach 3m=8m/s, nach 4m=16m/s, nach 5m=32m/s, nach 6m=64m/s, nach 7m=128m/s, nach 8m=256m/s, nach 9m=512m/s",
+            "answer": 512,
+            "answerDesc": "512m/s. Von 256 zu 512m/s wird  die Schallmauer durchbrochen und ist deshalb schneller als Schall und hört keine weiteren Dosen auf den Boden klappern.",
             "key":"3991"
         },
         {
@@ -197,6 +197,44 @@
             "answer": "Blutdruck",
             "answerDesc": "Der Blutdruck hat bei gesunden Werten ein Verhältnis von 120 zu 80.",
             "key":"5571"
+        },
+        {
+            "day": 18, 
+            "type": "multi", 
+            "title": "18",
+            "question": "Wann endet die Weihnachtszeit in Deutschland offiziell?",
+            "hint": "Nicht im selben Jahr",
+            "answer": [
+                {"option":"Zu Silvester", "solution":false}, 
+                {"option":"Am 27. Dezember", "solution":false}, 
+                {"option":"Am 6. januar bzw. zu \"Maria Lichtmess\" anfang Februar", "solution":true}
+            ],
+            "answerDesc": "Die Weihnachtszeit endet in Deutschlad offiziell am 6. Januar mit den Heiligen drei Königen bzw zu Maria Lichtmess anfang Februar",
+            "key":"8124"
+        },
+        {
+            "day": 19, 
+            "type": "number", 
+            "title": "19",
+            "question": "Wie viele Enden haben zweieinhalb Stäbe?",
+            "hint": "Was ist ein Ende bei einem Stab, bzw einem halben Stab?",
+            "answer": 6,
+            "answerDesc": "Auch ein halber Stab hat 2 Enden. Daher sind es für die Stände 6 Enden zusammen.",
+            "key":"6987"
+        },
+        {
+            "day": 20, 
+            "type": "multi", 
+            "title": "20",
+            "question": "",
+            "hint": "",
+            "answer": [
+                {"option":"", "solution":false}, 
+                {"option":"", "solution":false}, 
+                {"option":"", "solution":true}
+            ],
+            "answerDesc": "",
+            "key":"7735"
         }
     ]
      
