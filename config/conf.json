@@ -254,14 +254,14 @@
             "day": 22, 
             "type": "multi", 
             "title": "22",
-            "question": "",
-            "hint": "",
+            "question": "Wieviel Prozent der Deutschen wissen lt. Umfrage nicht, was wir zu Weihnachten feiern?",
+            "hint": "Wer es nicht weis, liegt in der starken Minderheit",
             "answer": [
-                {"option":"", "solution":false}, 
-                {"option":"", "solution":false}, 
-                {"option":"", "solution":false}
+                {"option":"70%", "solution":false}, 
+                {"option":"10%", "solution":true}, 
+                {"option":"40%", "solution":false}
             ],
-            "answerDesc": "",
+            "answerDesc": "Wie eine Forsa-Umfrage im Auftrag des Magazins \"Stern\" ergab, weiß jeder zehnte Bundesbürger nicht, weshalb Weihnachten gefeiert wird. 90 Prozent der Befragten wüssten, dass das Fest wegen der Geburt Christi begangen wird.",
             "key":"6827"
         },
         {
