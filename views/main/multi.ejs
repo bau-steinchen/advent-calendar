@@ -4,11 +4,11 @@
 		<title>Little Advent Calendar</title>
 		<link rel="stylesheet" type="text/css" href="/main.css"  />
 	</head>
-	<body >
+	<body class="background">
 		<div class="center">
 			<section >
-				<h2 align="center">Day <%= day.day %></h2>
-				<p align="center" style="white-space: pre-line">
+				<h2 class="title" align="center">Day <%= day.day %></h2>
+				<p class="text" align="center">
 					<%= day.question %>	
 				</p>
 				<div class="div-center" style="margin:10px">
@@ -25,10 +25,10 @@
 					
 				</div>
 				<p style="margin-top: 10px" align="center"><a href="/" type="button">Home</a></p>
-				<p id="result" style="white-space: pre-line">
+				<p class="hint" id="result" style="white-space: pre-line">
 						   
 				</p>
-				<h2 align="center" id="key"></h2>
+				<h2 class="text" align="center" id="key"></h2>
 				<script>
 					function checkAnswer(solution) {
 						console.log(solution);

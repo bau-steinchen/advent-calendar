@@ -2,10 +2,33 @@
     border: 5px solid;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
     padding: 10px;
+    background: rgba(0,0,0,0.7);
+    display: inline-block;
+    min-width: 65%;
+    min-height: 65%;
   }
+.background {
+  background-size: cover;
+  background-image: url('img/hintergrund.jpg');
+  text-align: center
+}
+.title {
+  font-size: clamp(16px, 4vw, 22px);
+  color: beige;
+  font-size: xx-large;
+}
+.text {
+  color: beige;
+  font-size: xx-large;
+  white-space: pre-line
+}
+.hint {
+  color: beige;
+  font-size: larger;
+  white-space: pre-line
+}
 .div-center {
     display: flex;
     align-items: center;
@@ -14,9 +37,10 @@
 .btn-center {
     margin: 0;
     position: absolute;
+    top: 50%;
     left: 50%;
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    -ms-transform: translateX(-50%, -50%);
+    transform: translateX(-50%, -50%);
   }
 ul {
     display: flex;
