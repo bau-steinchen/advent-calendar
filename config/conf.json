@@ -226,15 +226,57 @@
             "day": 20, 
             "type": "multi", 
             "title": "20",
+            "question": "Woher stammt die Pflanze Weihnachtsstern? ",
+            "hint": "Es ist ihm in der Regel in unseren Breitengraden nicht warm genug.",
+            "answer": [
+                {"option":"Von den Mohawk aus Nordamerika", "solution":false}, 
+                {"option":"Von den Aborigines aus Australien ", "solution":false}, 
+                {"option":"Von den Azteken aus Mexiko", "solution":true}
+            ],
+            "answerDesc": "Der Weihnachtsstern (Euphorbia pulcherrima) - auch unter dem Namen Poinsettie und Christstern bekannt - ist eine der beliebtesten Zimmerpflanzen. Dabei dauert die Verkaufssaison nur etwa acht Wochen. Ursprünglich stammt die Pflanze mit den markanten Hochblättern aus Mexiko.",
+            "key":"7735"
+        },
+        {
+            "day": 21, 
+            "type": "multi", 
+            "title": "21",
+            "question": "Wie viele Kerzen hatte der Adventskranz bei seiner Erfindung?",
+            "hint": "Der Dezember hat 24 Tage und gipfelt am 24. Dezember mit der Beschehrung",
+            "answer": [
+                {"option":"23", "solution":true}, 
+                {"option":"Von Anfang an waren es 4", "solution":false}, 
+                {"option":"1; in seltenen Fällen 2", "solution":false}
+            ],
+            "answerDesc": "Er hatte 19 kleine rote und vier dicke weiße Kerzen. Jeden Tag wurde eine neue Kerze angezündet - eine kleine für die Werktage, eine große für die Advents-Sonntage. Die Kinder wussten dadurch immer, wie viele Tage es noch bis Weihnachten sind.",
+            "key":"6827"
+        },
+        {
+            "day": 22, 
+            "type": "multi", 
+            "title": "22",
             "question": "",
             "hint": "",
             "answer": [
                 {"option":"", "solution":false}, 
                 {"option":"", "solution":false}, 
-                {"option":"", "solution":true}
+                {"option":"", "solution":false}
             ],
             "answerDesc": "",
-            "key":"7735"
+            "key":"6827"
+        },
+        {
+            "day": 23, 
+            "type": "multi", 
+            "title": "23",
+            "question": "Woher kommt das weihnachtliche Christkind?",
+            "hint": "Es ist eine Erfindung der Protestanten.",
+            "answer": [
+                {"option":"Martin Luther führte es im 16. Jahrhundert ein", "solution":true}, 
+                {"option":"Es stammt aus den Weihnachtsbräuchen in Skandinavien", "solution":false}, 
+                {"option":"Es ist einen Erfindung von Walt Disney", "solution":false}
+            ],
+            "answerDesc": "Goldblonde Locken und weißes Rauschekleid: Das Christkind wurde erst im 16. Jahrhundert erfunden – als protestantischer Gegenentwurf zum Nikolaus. Mit dem Christkind ist es eigenartig: Es ist eine Erfindung der Protestanten, gilt heute aber vor allem in katholisch geprägten Gegenden als weihnachtliche Symbolfigur.",
+            "key":"9144"
         }
     ]
      
