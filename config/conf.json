@@ -277,6 +277,20 @@
             ],
             "answerDesc": "Goldblonde Locken und weißes Rauschekleid: Das Christkind wurde erst im 16. Jahrhundert erfunden – als protestantischer Gegenentwurf zum Nikolaus. Mit dem Christkind ist es eigenartig: Es ist eine Erfindung der Protestanten, gilt heute aber vor allem in katholisch geprägten Gegenden als weihnachtliche Symbolfigur.",
             "key":"9144"
+        },
+        {
+            "day": 24, 
+            "type": "multi", 
+            "title": "24",
+            "question": "Was verschenken Deutsche laut Umfrage am meisten?",
+            "hint": "Mir fällt einfach kein Geschenk ein...",
+            "answer": [
+                {"option":"Gutscheine", "solution":true}, 
+                {"option":"Socken", "solution":false}, 
+                {"option":"Technik", "solution":false}
+            ],
+            "answerDesc": "Im Jahr 2022 planten rund 44 Prozent der Personen, die im Rahmen einer Umfrage zu den Geschenkekäufen zu Weihnachten befragt wurden, Gutscheine oder Geld zu verschenken.",
+            "key":"2412"
         }
     ]
      
