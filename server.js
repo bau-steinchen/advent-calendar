@@ -32,23 +32,12 @@ app.use(methodOverride('_method'));
 
 // title screen
 app.get('/', async(req, res) => {
-    //console.log(config.calendar)
-    // for(var item in config.calendar){
-    //     console.log(item)
-    // }
-    
-
-
-
-
-
-
     let date_ob = new Date();
+    let day = date_ob.getDate();
     //console.log(date_ob.getMonth())
     if (date_ob.getMonth() < 10) {
         res.render('main/notdecember');
     } else {
-        let day = date_ob.getDate();
         res.render('main/index', {"day": day});
     }
     
