@@ -65,6 +65,7 @@
 .input-style {
   border-radius: 10px;
   font-size: 20px;
+  color: beige;
   border: none;
   background-color:  rgb(165, 68, 68);
 }
