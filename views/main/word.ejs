@@ -12,14 +12,13 @@
 					<%= day.question %>	
 				</p>
 				<div style="margin:10px">
-					<input type="text" id="answer" size="20" />
-					<button id="submit" onclick="checkAnswer()" type="button">OK</button>
-					<button id="hint" onclick="showHint()" type="button">Hint</button>
-					
-					
-					
+					<input class="input-style" type="text" id="answer" size="20" />
 				</div>
-				<p align="center"><a href="/" type="button">Home</a></p>
+				<div>
+					<button class="btn-style" id="submit" onclick="checkAnswer()" type="button">OK</button>
+					<button class="btn-style" id="hint" onclick="showHint()" type="button">Hint</button>
+				</div>
+				<p class="btn-style"><a class="a-btn" href="/" type="button">Home</a></p>
 				<p class="hint" id="result" style="white-space: pre-line">
 						   
 				</p>
@@ -29,7 +28,7 @@
 						var answer = document.getElementById("answer").value;
 						var hint = '<%= day.hint %>';
 						var correct = '<%= day.answer %>';
-						var desc = '<%= day.answer_desc %>';
+						var desc = '<%= day.answerDesc %>';
 						var reward = '<%= day.key %>';
 						var element = document.getElementById("result");
 						var key = document.getElementById("key");

@@ -18,13 +18,16 @@
 					<ul>
 						<% day.answer.forEach(answer => { %>
 								<li class="list-center">
-									<button id="submit" onclick="checkAnswer('<%= answer.solution %>')" type="button"><%= answer.option %></button>
+									<button class="btn-style choice" id="submit" onclick="checkAnswer('<%= answer.solution %>')" type="button"><%= answer.option %></button>
 								</li>
 						<% }) %>
 					</ul>
 					
 				</div>
-				<p style="margin-top: 10px" align="center"><a href="/" type="button">Home</a></p>
+				<div>
+					<button class="btn-style" id="hint" onclick="showHint()" type="button">Hint</button>
+				</div>
+				<p class="btn-style" ><a class="a-btn" href="/" type="button">Home</a></p>
 				<p class="hint" id="result" style="white-space: pre-line">
 						   
 				</p>
@@ -33,7 +36,7 @@
 					function checkAnswer(solution) {
 						console.log(solution);
 						var hint = '<%= day.hint %>';
-						var desc = '<%= day.answer_desc %>';
+						var desc = '<%= day.answerDesc %>';
 						var reward = '<%= day.key %>';
 						var element = document.getElementById("result");
 						var key = document.getElementById("key");

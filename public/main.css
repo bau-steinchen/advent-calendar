@@ -17,7 +17,7 @@
 .title {
   font-size: clamp(16px, 4vw, 22px);
   color: beige;
-  font-size: xx-large;
+  font-size: 55px;
 }
 .text {
   color: beige;
@@ -42,20 +42,37 @@
     -ms-transform: translateX(-50%, -50%);
     transform: translateX(-50%, -50%);
   }
-ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    list-style-type: none;
-  }
-li {
-  margin: 5px
+.a-btn {
+  text-decoration: none;
+  color: inherit; 
 }
-/*.list-center {
-    margin: 0;
-    position: absolute;
-    display: inline-block;
-    left: 50%;
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-  } */
+.btn-style {
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: brown;
+  border: none;
+  color: beige;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.choice {
+  background-color: rgb(165, 68, 68);
+}
+.input-style {
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  background-color:  rgb(165, 68, 68);
+}
+
+ul {
+  width:100%;
+  text-align:center;
+}
+li {
+  display:block;
+}

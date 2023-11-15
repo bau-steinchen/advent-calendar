@@ -45,7 +45,7 @@ app.get('/', async(req, res) => {
 
     let date_ob = new Date();
     //console.log(date_ob.getMonth())
-    if (date_ob.getMonth() < 11) {
+    if (date_ob.getMonth() < 10) {
         res.render('main/notdecember');
     } else {
         let day = date_ob.getDate();
