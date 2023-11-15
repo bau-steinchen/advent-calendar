@@ -38,7 +38,7 @@ app.get('/', async(req, res) => {
     if (date_ob.getMonth() < 10) {
         res.render('main/notdecember');
     } else {
-        res.render('main/index', {"day": day});
+        res.render('main/index', {day: day});
     }
     
 })
