@@ -45,27 +45,33 @@ app.get('/', async(req, res) => {
 
 // tthis will be the page redirected after the title screen
 app.get('/:day', async(req, res) => {
-    var dayNum = req.params.day
-    var day = {}
-    config.calendar.forEach((element, index, array) => {
-        if (dayNum == element.day) {
-            day = element;
-            return;
-        }   
-    });
-    //console.log(day)
+    if ( req.params.day != "favicon.ico"){
+        var dayNum = req.params.day
+        var day = {}
+        config.calendar.forEach((element, index, array) => {
+            if (dayNum == element.day) {
+                day = element;
+                return;
+            }   
+        });
+        //console.log(day)
 
-    // decide the type and render the specific page
-    if (day.type == "number" || day.type == "Number") {
-        res.render('main/number', { "day": day });
-    } else if (day.type == "word" || day.type == "Word") {
-        res.render('main/word', { "day": day });
-    } else if (day.type == "multi" || day.type == "Multi") {
-        res.render('main/multi', { "day": day });
+        // decide the type and render the specific page
+        if (day.type == "number" || day.type == "Number") {
+            res.render('main/number', { "day": day });
+        } else if (day.type == "word" || day.type == "Word") {
+            res.render('main/word', { "day": day });
+        } else if (day.type == "multi" || day.type == "Multi") {
+            res.render('main/multi', { "day": day });
+        } else {
+            // default page if nothing matches (fallback)
+            res.render('main/index', { day: day.day});
+        }
     } else {
-        // default page
-        res.render('main/index');
+        // get rid of the error that the browser cant fetch the favicon icon 
+        res.sendStatus(404);
     }
+    
      
 })
 
