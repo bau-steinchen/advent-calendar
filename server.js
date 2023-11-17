@@ -35,7 +35,7 @@ app.get('/', async(req, res) => {
     let date_ob = new Date();
     let day = date_ob.getDate();
     //console.log(date_ob.getMonth())
-    if (date_ob.getMonth() < 10) {
+    if (date_ob.getMonth() < 11) {
         res.render('main/notdecember');
     } else {
         res.render('main/index', {day: day});
@@ -46,26 +46,30 @@ app.get('/', async(req, res) => {
 // tthis will be the page redirected after the title screen
 app.get('/:day', async(req, res) => {
     if ( req.params.day != "favicon.ico"){
-        var dayNum = req.params.day
-        var day = {}
-        config.calendar.forEach((element, index, array) => {
-            if (dayNum == element.day) {
-                day = element;
-                return;
-            }   
-        });
-        //console.log(day)
+        var dayNum = req.params.day;
+        if (dayNum <= 24 ){
+            var day = {};
+            config.calendar.forEach((element, index, array) => {
+                if (dayNum == element.day) {
+                    day = element;
+                    return;
+                }   
+            });
+            //console.log(day)
 
-        // decide the type and render the specific page
-        if (day.type == "number" || day.type == "Number") {
-            res.render('main/number', { "day": day });
-        } else if (day.type == "word" || day.type == "Word") {
-            res.render('main/word', { "day": day });
-        } else if (day.type == "multi" || day.type == "Multi") {
-            res.render('main/multi', { "day": day });
+            // decide the type and render the specific page
+            if (day.type == "number" || day.type == "Number") {
+                res.render('main/number', { "day": day });
+            } else if (day.type == "word" || day.type == "Word") {
+                res.render('main/word', { "day": day });
+            } else if (day.type == "multi" || day.type == "Multi") {
+                res.render('main/multi', { "day": day });
+            } else {
+                // default page if nothing matches (fallback)
+                res.render('main/index', { day: dayNum});
+            }
         } else {
-            // default page if nothing matches (fallback)
-            res.render('main/index', { day: dayNum});
+            res.render('main/stilldecember');
         }
     } else {
         // get rid of the error that the browser cant fetch the favicon icon 
