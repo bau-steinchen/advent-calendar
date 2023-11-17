@@ -26,6 +26,7 @@
 				<script>
 					function checkAnswer() {
 						var answer = document.getElementById("answer").value;
+						answer = answer.toLowerCase();
 						var hint = '<%= day.hint %>';
 						var correct = '<%= day.answer %>';
 						var desc = '<%= day.answerDesc %>';

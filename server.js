@@ -65,7 +65,7 @@ app.get('/:day', async(req, res) => {
             res.render('main/multi', { "day": day });
         } else {
             // default page if nothing matches (fallback)
-            res.render('main/index', { day: day.day});
+            res.render('main/index', { day: dayNum});
         }
     } else {
         // get rid of the error that the browser cant fetch the favicon icon 
