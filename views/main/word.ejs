@@ -8,6 +8,7 @@
 		<div class="center">
 			<section >
 				<h2 class="title" align="center">Day <%= day.day %></h2>
+				<span class="span">Gesucht ist ein Wort</span>
 				<p class="text" align="center" style="white-space: pre-line">
 					<%= day.question %>	
 				</p>
@@ -29,6 +30,7 @@
 						answer = answer.toLowerCase();
 						var hint = '<%= day.hint %>';
 						var correct = '<%= day.answer %>';
+						correct = correct.toLowerCase();
 						var desc = '<%= day.answerDesc %>';
 						var reward = '<%= day.key %>';
 						var element = document.getElementById("result");
