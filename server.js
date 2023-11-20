@@ -34,6 +34,7 @@ app.use(methodOverride('_method'));
 app.get('/', async(req, res) => {
     let date_ob = new Date();
     let day = date_ob.getDate();
+    console.log("new request on index page at: " + date_ob)
     //console.log(date_ob.getMonth())
     if (date_ob.getMonth() < 11) {
         res.render('main/notdecember');
@@ -46,6 +47,9 @@ app.get('/', async(req, res) => {
 // tthis will be the page redirected after the title screen
 app.get('/:day', async(req, res) => {
     if ( req.params.day != "favicon.ico"){
+        let date_ob = new Date();
+        console.log("new request on day: " + req.params.day + " page at: " + date_ob)
+
         var dayNum = req.params.day;
         if (dayNum <= 24 ){
             var day = {};
