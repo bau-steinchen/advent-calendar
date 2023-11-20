@@ -1,6 +1,9 @@
 # advent-calendar
 This small advent calendar started as an idea to provide my wife a little challenge every day before she get her present/candy of the day.
 
+INFO: For all want to participate the server is currently running on [advent.bau-steinchen.duckdns.org](advent.bau-steinchen.duckdns.org)  
+I might stop the server after christmas until next year but we will see.
+
 # Table of Contents
 1. [Basics - look and feel](#basics---look-and-feel)   
 1.1. [The basic build](#the-basic-build)   
