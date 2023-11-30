@@ -34,7 +34,13 @@ app.use(methodOverride('_method'));
 app.get('/', async(req, res) => {
     let date_ob = new Date();
     let day = date_ob.getDate();
-    console.log("new request on index page at: " + date_ob)
+    let message = "[" + day + "] new request from: " + req.socket.remoteAddress + " at " + date_ob
+    console.log(message)
+    fs.writeFile('access.log', message, {flag: 'a+'}, (err) => { 
+        if (err) {
+            throw err;
+        }
+    })
     //console.log(date_ob.getMonth())
     if (date_ob.getMonth() < 11) {
         res.render('main/notdecember');
