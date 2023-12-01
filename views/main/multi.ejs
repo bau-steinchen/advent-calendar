@@ -42,8 +42,10 @@
 						var key = document.getElementById("key");
 						if (solution.localeCompare("true") == 0) {
 							element.innerHTML = "Korrekt - Gut gemacht!\n " + desc ;
-							key.innerHTML = "Dein heutiger Freischaltcode lautet: " + reward;
-							//fetch(url + "/" + '<%= day.day %>');
+							var priv = '<%= private %>';
+							if ( priv === '1') {
+								key.innerHTML = "Dein heutiger Freischaltcode lautet: " + reward;
+							}
 						} else {
 							element.innerHTML = "Leider Falsch, vielleicht klapt es mit einem Hinweis?\n " + hint;
 							key.innerHTML = " "

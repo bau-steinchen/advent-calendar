@@ -53,6 +53,14 @@ app.get('/', async(req, res) => {
 // tthis will be the page redirected after the title screen
 app.get('/:day', async(req, res) => {
     if ( req.params.day != "favicon.ico"){
+        let private = "0"
+        let ip = req.socket.remoteAddress
+        console.log(ip)
+        if ( ip.includes('.112') ||
+            ip.includes('.24') ||
+            ip.includes('::1')) { // last one  for local testing
+                private = "1"
+            }
         let date_ob = new Date();
         console.log("new request on day: " + req.params.day + " page at: " + date_ob)
 
@@ -69,11 +77,11 @@ app.get('/:day', async(req, res) => {
 
             // decide the type and render the specific page
             if (day.type == "number" || day.type == "Number") {
-                res.render('main/number', { "day": day });
+                res.render('main/number', { "day": day, private: private});
             } else if (day.type == "word" || day.type == "Word") {
-                res.render('main/word', { "day": day });
+                res.render('main/word', { "day": day, private: private});
             } else if (day.type == "multi" || day.type == "Multi") {
-                res.render('main/multi', { "day": day });
+                res.render('main/multi', { "day": day, private: private});
             } else {
                 // default page if nothing matches (fallback)
                 res.render('main/index', { day: dayNum});
