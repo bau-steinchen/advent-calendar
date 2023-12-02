@@ -36,7 +36,7 @@ app.get('/', async(req, res) => {
     let day = date_ob.getDate();
     let message = "[" + day + "] new request from: " + req.socket.remoteAddress + " at " + date_ob + "\n"
     console.log(message)
-    fs.writeFile('access.log', message, {flag: 'a+'}, (err) => { 
+    fs.writeFile('advent-logs/access.log', message, {flag: 'a+'}, (err) => { 
         if (err) {
             throw err;
         }

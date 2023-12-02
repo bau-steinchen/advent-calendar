@@ -1,0 +1,8 @@
+version: "3"
+services:
+  advent-calendar:
+    build: .
+    volumes:
+      - /home/pi/Desktop/advent-logs:/usr/src/app/advent-logs
+    ports:
+      - "8080:8080"
