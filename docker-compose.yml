@@ -2,6 +2,7 @@ version: "3"
 services:
   advent-calendar:
     build: .
+    restart: always
     volumes:
       - /home/pi/Desktop/advent-logs:/usr/src/app/advent-logs
     ports:
