@@ -61,7 +61,7 @@
 }
 .choice {
   background-color: rgb(165, 68, 68);
-  transform: translateX(-25%);
+  /*transform: translateX(-25%);*/
 }
 .input-style {
   border-radius: 10px;
