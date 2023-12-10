@@ -56,8 +56,8 @@ app.get('/:day', async(req, res) => {
         let private = "0"
         let ip = req.socket.remoteAddress
         console.log(ip)
-        if ( ip.includes('.112') ||
-            ip.includes('.24') ||
+        if ( ip.includes('178.112') ||
+            ip.includes('178.24') ||
             ip.includes('::1')) { // last one  for local testing
                 private = "1"
             }
